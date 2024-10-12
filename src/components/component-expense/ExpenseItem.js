@@ -1,12 +1,13 @@
 import './ExpenseItem.css'
 
-function ExpenseItem(){
+function ExpenseItem(holdings){
+
     return (
         <div className="expense-item">
-            <div>March 28th 2021</div>
+            <div>{holdings.date.toISOString()}</div>
             <div className='expense-item__description'>
-                <h2>Car Insurance</h2>
-                <div className='expense-item__price'>$294.3</div>
+                <h2>{holdings.title}</h2>
+                <div className='expense-item__price'>${holdings.price}</div>
             </div>
         </div>
     )
