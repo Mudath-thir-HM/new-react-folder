@@ -2,7 +2,7 @@ import ExpenseDate from '../componentDate/ExpenseDate';
 import Card from '../Card-component/Card';
 import './ExpenseItem.css'
 
-function ExpenseItem(holdings){
+const ExpenseItem = (holdings) => {
 
     return (
         <Card className="expense-item">
