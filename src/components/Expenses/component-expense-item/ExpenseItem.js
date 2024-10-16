@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import ExpenseDate from '../componentDate/ExpenseDate';
-import Card from '../Card-component/Card';
+import Card from '../../Card-component/Card';
 import './ExpenseItem.css'
 
 const ExpenseItem = (holdings) => {
