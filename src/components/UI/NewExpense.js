@@ -1,14 +1,13 @@
 import './NewExpense.css'
 import ExpenseForm from './ExpenseForm';
 
-const NewExpense = (props) => {
+const NewExpense = (holdings) => {
     const getExpenseDataHandler = (eneredExpenseData) => {
         const expenseData = {
-            ...eneredExpenseData,
-            id: Math.random().toString()
+            id: Math.random().toString(),
+            ...eneredExpenseData
         }
-        props.onAddExpense(expenseData);
-        
+        holdings.onAddExpense(expenseData);
     }
 
     return (
