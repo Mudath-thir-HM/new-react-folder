@@ -8,9 +8,12 @@ const Expenses = (holdings) => {
     const [currentYear, setFilteredYear] =useState('2024');
     
     const filterChangerHandler = selectedYear => {
-        setFilteredYear(selectedYear);
-        
-    }
+        setFilteredYear(selectedYear);  
+    };
+
+    const filteredExpenses = holdings.items.filter(expense => {
+        return expense.date.getFullYear().toString() === currentYear;
+    });
 
     return (
         <Card className="expenses">
@@ -19,8 +22,9 @@ const Expenses = (holdings) => {
                 onChangeFilter = {filterChangerHandler}
             /> 
 
-            {holdings.items.map((expense) => 
+            {filteredExpenses.map((expense) => 
                 <ExpenseItem 
+                    key = {expense.id}
                     title = {expense.title}
                     price = {expense.price}
                     date = {expense.date}
