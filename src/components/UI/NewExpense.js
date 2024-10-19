@@ -1,5 +1,5 @@
 import './NewExpense.css'
-import ExpenseForm from './ExpenseForm';
+import ExpenseForm from '../Expenses/filter-component/ExpenseForm';
 
 const NewExpense = (holdings) => {
     const getExpenseDataHandler = (eneredExpenseData) => {

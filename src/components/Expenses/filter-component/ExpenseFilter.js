@@ -3,7 +3,7 @@ import './ExpenseFilter.css';
 const ExpenseFilter = (holdings) => {
     const changedDropDownHandler = (event) => {
         holdings.onChangeFilter(event.target.value);    
-}
+    };
 
     return (
         <div className="expenses-filter">

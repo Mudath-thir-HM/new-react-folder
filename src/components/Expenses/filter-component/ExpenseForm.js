@@ -23,7 +23,7 @@ const ExpenseForm = (holdings) => {
         
         const expenseData = {
             title: enteredTitle,
-            amount: enteredAmount,
+            price: enteredAmount,
             date: new Date(enteredDate)
         };
 
@@ -48,9 +48,9 @@ const ExpenseForm = (holdings) => {
                     <label>Amount</label>
                     <input
                         type='number' 
-                        value={enteredAmount}
                         min='0.01' 
-                        step='0,01' 
+                        step='0.01' 
+                        value={enteredAmount}
                         onChange={amountChangeHandler}
                     />
                 </div>
