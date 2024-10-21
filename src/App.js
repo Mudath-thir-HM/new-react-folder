@@ -1,6 +1,6 @@
 import React, {useState} from "react";
 
-import Expenses from "./components/Expenses/component-expenses/Expenses";
+import Expenses from "./components/Expenses/Expenses";
 import NewExpense from "./components/UI/NewExpense";
 
 const INITIAL_EXPENSES = [
@@ -34,11 +34,8 @@ function App() {
   const [expenses, setExpenses] =useState(INITIAL_EXPENSES);
 
   const addExpenseHandler = expense => {
-    console.log(expense);
-    
     setExpenses(prevExpenses => {
-      return [expense, ...prevExpenses]
-      
+      return [expense, ...prevExpenses]  
     });
   };
 
