@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 
 import Expenses from "./components/Expenses/Expenses";
-import NewExpense from "./components/UI/NewExpense";
+import NewExpense from "./components/NewExpences/NewExpense";
 
 const INITIAL_EXPENSES = [
   {

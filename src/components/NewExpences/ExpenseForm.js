@@ -65,6 +65,7 @@ const ExpenseForm = (holdings) => {
                     />
                 </div>
                 <div className='new-expense__actions'>
+                    <button type='button' onClick={holdings.onCancel}>Cancel</button>
                     <button type='submit'>Add Expense</button>
                 </div>
             </div>
